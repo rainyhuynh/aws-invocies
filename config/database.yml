@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: Invoices_prod
-  username: Invoices
-  password: <%= ENV['INVOICES_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  # database: Invoices_prod
+  # username: Invoices
+  # password: <%= ENV['INVOICES_DATABASE_PASSWORD'] %>
